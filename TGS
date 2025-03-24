@@ -1,0 +1,68 @@
+Questões:
+A. Identifique e descreva os componentes principais do Sistema de 
+Gestão de Estoques.
+
+✓ O que seria considerado entrada, processamento e saída no 
+sistema? Dê exemplos para cada um desses componentes.
+  A entrada se refere aos dados ou recursos que entram no sistema. 
+  O processamento é o tratamento da entrada, resultando em saídas.
+  A saída são os resultados produzidos pelo sistema após o processamento. 
+  - Entrada: 
+    Recebimento de Produtos, o estoque recebe 40 unidades de produtos.
+    Realização de Vendas, o sistema realiza a venda de produtos.
+    Devolução de Produtos, um cliente devolve um produto com defeito para a empresa. 
+
+  - Processamento:
+    Atualização de Estoque, o estoque é atualizado com as unidades que foram recebidas ou que saíram do estoque em caso de vendas.
+    Processo de Pagamento, o sistema irá verificar se o pagamento foi realizado.
+    Verificação de Nota, o sistema verifica a nota fiscal da compra, valida a devolução e registra a reintegração do item ao estoque.
+
+  - Saída:
+    Relatório de Estoque, mostra caso o estoque esteja abaixo do esperado, então recomenda a compra de novos produtos.
+    Emitir Nota, o sistema irá emitir uma nota fiscal para o cliente.
+    Atualização e Reembolso, atualização do estoque com o produto devolvido e geração de um relatório de devoluções para análise de problemas recorrentes, então o sistema gera o reembolso ao cliente.
+
+✓ Quais limites o sistema de gestão de estoques teria, e como ele 
+interage com o ambiente externo (como fornecedores e clientes)?
+
+
+B. Analise a interdependência entre os componentes do sistema de 
+gestão de estoques.
+
+✓ Como a mudança em uma parte do sistema afetaria outras partes?
+  - Em um modulo de gerenciamento de estoque que está suscetível a erros módulos interdependentes à ele sofrerão também com os problemas. Como no caso de um problema na compra dos produtos no estoque onde o estoque é reabastecido porem não é dado baixa no sistema, portanto ira constar que o estoque está vazio mesmo estando cheio. Com isso o modulo de vendas será impossibilitado de realizar as vendas do produto, isso gerará uma grande compra de novos produtos mesmo o estoque estando cheio. O relatório de finanças é afetado, com gastos excessivos e desperdício de produtos.
+  
+✓ Dê exemplos de como o sistema pode se ajustar automaticamente a 
+mudanças, aplicando o princípio da homeostase.
+  - Reposição Automática:
+    O sistema de estoque tem acesso ao histórico de vendas dos produtos sendo capaz de realizar a reposição de forma automática, evitando excessos e escassez de produtos.
+  - Descontos Inteligentes:
+    Com base no relatório de vendas, o sistema irá aplicar descontos aos produtos mais vendidos de acordo com o período estipulado, além disso deverá aplicar descontos á eventos.
+  - Aumento de Estoque:
+    Com o aumento de espaço no estoque o sistema deverá de forma automática, atualizar os valores relativos ao estoque, por exemplo porcentagem ocupada por determinado produto.
+
+C. Feedback:
+✓ Como o feedback poderia ser utilizado para melhorar a operação do 
+sistema de gestão de estoques?
+
+
+✓ Dê um exemplo de como um relatório gerado pelo sistema (como um 
+relatório de vendas ou de inventário) pode servir para ajustes no 
+processo de compra ou no gerenciamento de estoque.
+
+
+
+D. Equifinalidade:
+✓ A empresa pode atingir os objetivos de manter o estoque 
+equilibrado e reduzir o desperdício utilizando diferentes 
+estratégias dentro do sistema. 
+✓ Explique como esses diferentes caminhos podem levar ao mesmo 
+resultado desejado no sistema.
+
+
+Reflexão Pessoal:
+Após responder as questões acima, escreva um breve texto (de 150 a 200 
+palavras) explicando como a aplicação da Teoria Geral de Sistemas pode melhorar 
+a eficiência e a flexibilidade de um Sistema de Informação, utilizando o exemplo 
+do Sistema de Gestão de Estoques.
+

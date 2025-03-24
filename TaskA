@@ -1,0 +1,38 @@
+Exemplo 1: Cancelamento de Pedido
+Entrada: O cliente solicita o cancelamento de um pedido.
+
+Processamento: O sistema verifica se o pedido já foi enviado, processa o estorno do pagamento e atualiza o status do pedido.
+
+Saídas:
+
+O estoque é atualizado com a devolução do produto.
+
+O cliente recebe uma notificação confirmando o cancelamento.
+
+O setor financeiro recebe um aviso para processar o reembolso.
+
+Exemplo 2: Cadastro de Novo Fornecedor
+Entrada: A empresa cadastra um novo fornecedor no sistema.
+
+Processamento: O sistema valida as informações (CNPJ, dados bancários, produtos fornecidos) e adiciona o fornecedor à base de dados.
+
+Saídas:
+
+O fornecedor fica disponível para futuras compras.
+
+A equipe de compras recebe uma notificação sobre o novo fornecedor.
+
+Relatórios de fornecedores são atualizados com a nova entrada.
+
+Exemplo 3: Promoção de Produtos
+Entrada: A empresa define uma promoção com desconto para alguns produtos.
+
+Processamento: O sistema aplica os descontos, atualiza os preços e informa os clientes.
+
+Saídas:
+
+O site e o sistema interno exibem os preços promocionais.
+
+Clientes cadastrados recebem um e-mail ou notificação da promoção.
+
+Relatórios de vendas passam a considerar os novos preços.
