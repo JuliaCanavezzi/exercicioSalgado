@@ -8,23 +8,32 @@ sistema? Dê exemplos para cada um desses componentes.
   O processamento é o tratamento da entrada, resultando em saídas.
   A saída são os resultados produzidos pelo sistema após o processamento. 
   - Entrada: 
-    Recebimento de Produtos, o estoque recebe 40 unidades de produtos.
+    Recebimento de Produtos, o estoque recebe novos produtos.
     Realização de Vendas, o sistema realiza a venda de produtos.
     Devolução de Produtos, um cliente devolve um produto com defeito para a empresa. 
+    A empresa define uma promoção com desconto para alguns produtos.
 
   - Processamento:
-    Atualização de Estoque, o estoque é atualizado com as unidades que foram recebidas ou que saíram do estoque em caso de vendas.
+    Atualização de Estoque, o estoque é atualizado com as unidades que foram recebidas.
     Processo de Pagamento, o sistema irá verificar se o pagamento foi realizado.
     Verificação de Nota, o sistema verifica a nota fiscal da compra, valida a devolução e registra a reintegração do item ao estoque.
+    O sistema aplica os descontos, atualiza os preços e informa os clientes.
 
   - Saída:
-    Relatório de Estoque, mostra caso o estoque esteja abaixo do esperado, então recomenda a compra de novos produtos.
-    Emitir Nota, o sistema irá emitir uma nota fiscal para o cliente.
+    Relatório de Estoque, mostra caso o estoque esteja abaixo do esperado, então recomenda a compra de novos produtos. MUDAR
+    Emitir Nota, o sistema irá emitir uma nota fiscal para o cliente. Segunda Saída: O sistema irá atualizar o estoque.
     Atualização e Reembolso, atualização do estoque com o produto devolvido e geração de um relatório de devoluções para análise de problemas recorrentes, então o sistema gera o reembolso ao cliente.
+    Clientes cadastrados recebem um e-mail ou notificação da promoção.
+    Relatórios de vendas passam a considerar os novos preços.
 
 ✓ Quais limites o sistema de gestão de estoques teria, e como ele 
 interage com o ambiente externo (como fornecedores e clientes)?
-
+  Os sistemas de gestão de estoque possuem limites que envolvem tanto restrições internas quanto fatores externos. 
+  Internamente, o sistema pode monitorar os níveis de estoque, registrar entradas e saídas de produtos e até automatizar pedidos para fornecedores quando um nível mínimo é atingido. No entanto, sua capacidade de controle termina quando a operação depende de fatores externos, como fornecedores e logística.
+  Por exemplo, se o sistema detecta um nível de estoque baixo e emite automaticamente um pedido ao fornecedor, 
+  esse processo está dentro do escopo do sistema. Porém, caso o fornecedor não consiga atender ao pedido no prazo necessário devido a problemas de produção, 
+  logística ou falta de matéria-prima, o sistema não tem controle sobre essa situação. Isso pode resultar em pedidos pendentes ou atrasados,
+  afetando a disponibilidade do estoque e, consequentemente, a experiência do cliente.
 
 B. Analise a interdependência entre os componentes do sistema de 
 gestão de estoques.
@@ -44,12 +53,20 @@ mudanças, aplicando o princípio da homeostase.
 C. Feedback:
 ✓ Como o feedback poderia ser utilizado para melhorar a operação do 
 sistema de gestão de estoques?
+  O feedback poderia ajudar o sistema a monitorar o estoque de forma inteligente, alertando quando um item precisa ou não ser comprado, 
+  os melhores momentos para realizar promoções de acordo com a quantidade de itens e se é necessário aumentar ou diminuir a quantidade de espaço de um determinado item.
 
-
-✓ Dê um exemplo de como um relatório gerado pelo sistema (como um 
-relatório de vendas ou de inventário) pode servir para ajustes no 
+✓ Dê um exemplo de como um relatório gerado pelo sistema pode servir para ajustes no 
 processo de compra ou no gerenciamento de estoque.
-
+  O sistema gera um relatório de estoque mensal que mostra a rotatividade dos produtos, quantas vezes cada item foi vendido e reposto dentro desse mês.
+  O relatório contem Produtos de alta rotatividade - vendem rápido e são reabastecido constantemente. Produtos de baixa rotatividade - não são tão vendidos e ficam
+  parados por muito tempo e o tempo que os fornecedores levam para repor os produtos.
+  Esse relatório pode servir de ajuste para otimização de compras, então se o relatório indica que o produto está vendendo bem, o sistema pode aumentar o estoque 
+  para evitar a falta. Se um produto é pouco vendido, o sistema pode reduzir a compra para evitar excesso.
+  Ajuste na redução de custo e espaço, produtos que não vendem tão bem gera custos. O relatório pode indicar a necessidade de fazer promoções, ou não realizar mais compras
+  desse determinado produto.
+  Ajuste na negociação com fornecedor, então caso o relatório aponte que o fornecedor demora muito para entregar um produto essencial, o sistema pode buscar 
+  novos fornecedores.
 
 
 D. Equifinalidade:
@@ -58,6 +75,10 @@ equilibrado e reduzir o desperdício utilizando diferentes
 estratégias dentro do sistema. 
 ✓ Explique como esses diferentes caminhos podem levar ao mesmo 
 resultado desejado no sistema.
+Estratégia de JIT, a empresa mantém um estoque mínimo e só faz pedidos de reposição conforme a demanda, reduzindo o estoque total e o risco de desperdício.
+Estratégia de Níveis, o sistema define níveis ideais de estoque para cada produto e o sistema automatiza o reabastecimento para garantir que o estoque não caia 
+abaixo do mínimo ou ultrapasse o máximo.
+
 
 
 Reflexão Pessoal:
@@ -65,4 +86,5 @@ Após responder as questões acima, escreva um breve texto (de 150 a 200
 palavras) explicando como a aplicação da Teoria Geral de Sistemas pode melhorar 
 a eficiência e a flexibilidade de um Sistema de Informação, utilizando o exemplo 
 do Sistema de Gestão de Estoques.
+  
 
